@@ -1,15 +1,11 @@
 #pragma once
 
 int NWD(int lhs, int rhs) {
-    if ((lhs == 0) && (rhs == 0))
-    {
+    if ((lhs == 0) && (rhs == 0)) {
         return 0;
-    }
-    else if ((lhs == 0) && (rhs != 0)) {
+    } else if ((lhs == 0) && (rhs != 0)) {
         return std::abs(rhs);
-    }
-    else if ((lhs != 0) && (rhs == 0))
-    {
+    } else if ((lhs != 0) && (rhs == 0)) {
         return std::abs(lhs);
     }
 
@@ -26,8 +22,7 @@ int NWD(int lhs, int rhs) {
 }
 
 int NWW(int lhs, int rhs) {
-    if((lhs == 0) && (rhs == 0))
-    {
+    if ((lhs == 0) && (rhs == 0)) {
         return 0;
     }
     return std::abs(lhs * rhs) / NWD(lhs, rhs);
